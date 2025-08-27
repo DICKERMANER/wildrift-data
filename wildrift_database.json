@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.3.0",
+  "dataset_name": "WildRift Mentor – Data Sources",
+  "language_ui": "zh-TW",
+  "region_default": "CN",
+  "patch_current": "6.2d",
+  "patch_latest_url": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-6-2d-adventure-modes",
+  "patch_published_at": "2025-08-21T09:00:00.000Z",
+  "patch_check_sources": [
+    "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/",
+    "https://wildrift.leagueoflegends.com/zh-tw/news/tags/patch-notes/",
+    "https://wildrift.leagueoflegends.com/en-us/news/tags/patch-notes/",
+    "https://wildrift.qq.com"
+  ],
+  "community_sources": [
+    {
+      "name": "抖音 Douyin",
+      "url": "https://www.douyin.com",
+      "priority": 3,
+      "notes": "玩家短影音，僅供翻譯/Meta 參考"
+    },
+    {
+      "name": "TikTok",
+      "url": "https://www.tiktok.com",
+      "priority": 3,
+      "notes": "國際玩家短影音，僅供參考"
+    }
+  ],
+  "notes": "所有英雄/技能/裝備/符文名稱以國服官方翻譯為準；國際服來源請依 mapping_files 做名稱映射。",
+  "mapping_files": {
+    "base_dir": "./mappings/",
+    "champions": "name_mapping_zhCN_champions_full.json",
+    "runes": "name_mapping_zhCN_runes.json",
+    "items": [
+      "name_mapping_zhCN_items.core.json",
+      "name_mapping_zhCN_items.json"
+    ],
+    "summoners": "name_mapping_zhCN_summoners.json"
+  },
+  "mapping_strategy": {
+    "missing_policy": "fallback_en",
+    "normalize_en_keys": true,
+    "dedupe_policy": "first_wins",
+    "telemetry": true,
+    "telemetry_file": "./mappings/_missing_keys.log"
+  },
+  "usage_guidelines": {
+    "focus": "僅限《激鬥峽谷》手遊；禁用 LoL PC 資訊。",
+    "reply_style": "直接、實戰化；回覆必標版本號（如：版本 6.2d）。",
+    "answer_blocks": [
+      "版本背景",
+      "英雄/對位分析",
+      "出裝符文（國服名）",
+      "節奏打法（前/中/後期）",
+      "BP 策略（選禁）",
+      "實戰技巧（連招/視野/轉物件）",
+      "速查表"
+    ],
+    "timing_breakdown": [
+      "前期",
+      "中期",
+      "後期"
+    ],
+    "stats_authority": "實時勝率/出場率/禁用率以騰訊官方平台為唯一權威"
+  },
+  "version_sources": [
+    {
+      "name": "國服官網",
+      "url": "https://wildrift.qq.com",
+      "priority": 1
+    },
+    {
+      "name": "Riot 官網（繁中）",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/",
+      "priority": 1
+    },
+    {
+      "name": "Riot 官網（英）",
+      "url": "https://wildrift.leagueoflegends.com/en-us/news/tags/patch-notes/",
+      "priority": 2
+    }
+  ],
+  "hero_stats_sources": [
+    {
+      "name": "騰訊官方數據平台",
+      "url": "https://lolm.qq.com/act/a20220818raider/index.html",
+      "priority": 1,
+      "notes": "勝率/出場率/禁用率唯一權威"
+    }
+  ],
+  "patch_source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/",
+  "patch_history": [
+    {
+      "patch": "6.2d",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-6-2d-adventure-modes",
+      "at": "2025-08-27T05:15:42.561Z"
+    }
+  ]
+}

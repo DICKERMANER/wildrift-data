@@ -1,0 +1,16 @@
+{
+  "name": "wildrift",
+  "version": "1.0.0",
+  "description": "WildRift Mentor Project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "search": "cross-env WR_COMMUNITY_SEARCH",
+    "update": "node index.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.1.2",
+    "node-fetch": "^3.3.2"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "type": "runes",
+  "updated_at": "2025-08-27",
+  "patch_synced": "6.2d",
+  "keystones": [
+    { "en": "Conqueror",        "tw": "征服者",       "cn": "征服者",
+      "sources": { "tw": ["turn2search4","turn0search6"], "cn": ["turn7search0","turn1search2"] } },
+
+    { "en": "Electrocute",      "tw": "死亡電刑",     "cn": "电刑",
+      "sources": { "tw": ["turn0search5"], "cn": ["turn1search2"] } },
+
+    { "en": "Fleet Footwork",   "tw": "瞬疾步法",     "cn": "迅捷步法",
+      "sources": { "tw": ["turn2search1","turn2search5","turn2search4"], "cn": ["turn7search0"] } },
+
+    { "en": "Grasp of the Undying", "tw": "不死之握", "cn": "不灭之握",
+      "sources": { "tw": ["turn2search4","turn0search6"], "cn": ["turn1search2"] } },
+
+    { "en": "Aftershock",       "tw": "餘震",         "cn": "余震",
+      "sources": { "tw": ["turn2search0","turn2search2"], "cn": ["turn7search0"] } },
+
+    { "en": "Summon Aery",      "tw": "召喚：艾黎",   "cn": "召唤：艾黎",
+      "sources": { "tw": ["turn12search3"], "cn": ["turn7search4","turn7search1"] } },
+
+    { "en": "Phase Rush",       "tw": "相位衝擊",     "cn": "相位猛冲",
+      "sources": { "tw": ["turn10search0","turn11search6"], "cn": ["turn11search1"] } },
+
+    { "en": "First Strike",     "tw": "先發制人",     "cn": "先攻",
+      "sources": { "tw": ["turn12search4"], "cn": ["turn7search1"] } },
+
+    { "en": "Kraken Slayer",    "tw": "海妖殺手",     "cn": "海妖杀手",
+      "status": "removed_in_WR", 
+      "note": "3.3 推出、5.1a 之後移除（台服 patch 文稱：移除海妖殺手）。",
+      "sources": { "tw": ["turn2search4","turn12search4"] } }
+  ],
+  "minor": {
+    "domination": [
+      { "en": "Brutal",           "tw": "兇蠻",         "cn": "残暴",
+        "sources": { "tw": ["turn11search6"], "cn": ["turn7search9"] } },
+      { "en": "Gathering Storm",  "tw": "風暴聚集",     "cn": "风暴聚集",
+        "sources": { "cn": ["turn1search2"] } },
+      { "en": "Sudden Impact",    "tw": "猛然衝擊",     "cn": "猛然冲击",
+        "sources": { "cn": ["turn11search5"] } },
+      { "en": "Hunter: Vampirism","tw": "吸血獵手",     "cn": "吸血猎手",
+        "sources": { "cn": ["turn8search5"] } }
+    ],
+    "resolve": [
+      { "en": "Second Wind",      "tw": "復甦之風",     "cn": "复苏之风",
+        "sources": { "cn": ["turn7search10"] } },
+      { "en": "Bone Plating",     "tw": "骸骨鍍層",     "cn": "骸骨镀层",
+        "sources": { "cn": ["turn14search0"] } },
+      { "en": "Adaptive Carapace","tw": "適性甲殼（改造外殼）", "cn": "适应性外壳",
+        "sources": { "tw": ["turn10search1"], "cn": ["turn8search1","turn8search8"] } }
+    ],
+    "inspiration": [
+      { "en": "Sweet Tooth",      "tw": "嗜甜如命",     "cn": "甜食专家",
+        "sources": { "tw": ["turn10search0","turn10search2","turn10search4"], "cn": ["turn14search0","turn14search1"] } },
+      { "en": "Hextech Flashtraption", "tw": "海克斯充能閃現", "cn": "海克斯科技闪现罗网",
+        "sources": { "tw": ["turn12search1"], "cn": ["turn13search1","turn13search5"] } }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "type": "summoners",
+  "notes": "召喚師技能：英文 → 台灣繁中官方名稱 → 中國服官方名稱",
+  "data": [
+    { "en": "Flash",       "tw": "閃現",   "cn": "闪现" },
+    { "en": "Smite",       "tw": "懲戒",   "cn": "惩戒" },
+    { "en": "Ignite",      "tw": "點燃",   "cn": "引燃" },
+    { "en": "Exhaust",     "tw": "虛弱",   "cn": "虚弱" },
+    { "en": "Heal",        "tw": "治癒",   "cn": "治疗术" },
+    { "en": "Barrier",     "tw": "光盾",   "cn": "屏障" },
+    { "en": "Ghost",       "tw": "鬼步走", "cn": "幽灵疾步" },
+    { "en": "Cleanse",     "tw": "淨化",   "cn": "净化" }
+  ]
+}

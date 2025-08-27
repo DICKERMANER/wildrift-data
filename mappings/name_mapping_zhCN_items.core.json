@@ -1,0 +1,19 @@
+{
+  "type": "items",
+  "data": [
+    { "en": "Bloodthirster",            "tw": "嗜血者",           "cn": "饮血剑" },
+    { "en": "Infinity Edge",            "tw": "無盡之刃",         "cn": "无尽之刃" },
+    { "en": "Sunfire Aegis",            "tw": "日炎聖盾",         "cn": "日炎圣盾" },
+    { "en": "Warmog's Armor",           "tw": "好戰者鎧甲",       "cn": "狂徒铠甲" },
+    { "en": "Black Cleaver",            "tw": "黑色切割者",       "cn": "黑色切割者" },
+    { "en": "Maw of Malmortius",        "tw": "魔提斯深淵",       "cn": "玛莫提乌斯之噬" },
+    { "en": "Divine Sunderer",          "tw": "聖裂之杖",         "cn": "神圣分离者" },
+    { "en": "Blade of the Ruined King", "tw": "殞落王者之劍",     "cn": "破败王者之刃" },
+    { "en": "Youmuu's Ghostblade",      "tw": "妖夢鬼刀",         "cn": "幽梦之灵" },
+    { "en": "Dead Man's Plate",         "tw": "死者肩甲",         "cn": "亡者板甲" },
+    { "en": "Abyssal Mask",             "tw": "深淵面具",         "cn": "深渊面具" },
+    { "en": "Trinity Force",            "tw": "三相之力",         "cn": "三相之力" },
+    { "en": "Riftmaker",                "tw": "峽谷製造者",       "cn": "峡谷制造者" }
+  ],
+  "notes": "本表只含首批已核對之高風險名稱；其餘裝備將按相同規則補齊。"
+}
