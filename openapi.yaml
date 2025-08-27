@@ -1,0 +1,170 @@
+openapi: 3.1.0
+info:
+  title: WildRift Data API (Static on GitHub Pages)
+  version: "1.0.0"
+  description: >
+    Read-only endpoints for WildRift Mentor.
+    Provides the latest patch info and TW/CN name mappings (champions, items, runes, summoners).
+
+servers:
+  - url: https://dickermaner.github.io/wildrift-data
+
+tags:
+  - name: database
+    description: Main database (includes patch_current and mapping file paths)
+  - name: mappings
+    description: Name mappings for champions / items / runes / summoners
+
+paths:
+  /wildrift_database.json:
+    get:
+      tags: [database]
+      operationId: getDatabase
+      summary: Get the main database (contains patch_current and mapping file references)
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MainDatabase"
+  /mappings/name_mapping_zhCN_champions_full.json:
+    get:
+      tags: [mappings]
+      operationId: getChampionsMap
+      summary: Get champions mapping (EN -> TW/CN)
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ChampionsMapping"
+  /mappings/name_mapping_zhCN_items.core.json:
+    get:
+      tags: [mappings]
+      operationId: getItemsCore
+      summary: Get prioritized items mapping (core subset; first-wins)
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ItemsMapping"
+  /mappings/name_mapping_zhCN_items.json:
+    get:
+      tags: [mappings]
+      operationId: getItemsFull
+      summary: Get full items mapping (merged after core)
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ItemsMapping"
+  /mappings/name_mapping_zhCN_runes.json:
+    get:
+      tags: [mappings]
+      operationId: getRunesMap
+      summary: Get runes mapping (keystones + minors)
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RunesMapping"
+  /mappings/name_mapping_zhCN_summoners.json:
+    get:
+      tags: [mappings]
+      operationId: getSummonersMap
+      summary: Get summoner spells mapping
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SummonersMapping"
+
+components:
+  schemas:
+    MainDatabase:
+      type: object
+      additionalProperties: true
+      properties:
+        schema_version: { type: string }
+        dataset_name: { type: string }
+        language_ui: { type: string }
+        region_default: { type: string }
+        patch_current: { type: [string, "null"] }
+        patch_latest_url: { type: [string, "null"] }
+        patch_published_at: { type: [string, "null"] }
+        mapping_files:
+          type: object
+          properties:
+            base_dir: { type: string }
+            champions: { type: string }
+            runes: { type: string }
+            items:
+              oneOf:
+                - type: array
+                  items: { type: string }
+                - type: string
+            summoners: { type: string }
+    ChampionsMapping:
+      type: object
+      additionalProperties: true
+      properties:
+        type: { const: "champions" }
+        data:
+          type: array
+          items:
+            $ref: "#/components/schemas/NameTriple"
+    ItemsMapping:
+      type: object
+      additionalProperties: true
+      properties:
+        type: { const: "items" }
+        data:
+          type: array
+          items:
+            $ref: "#/components/schemas/NameTriple"
+        core:
+          type: array
+          items:
+            $ref: "#/components/schemas/NameTriple"
+    RunesMapping:
+      type: object
+      additionalProperties: true
+      properties:
+        type: { const: "runes" }
+        keystones:
+          type: array
+          items:
+            $ref: "#/components/schemas/NameTriple"
+        minor:
+          type: object
+          additionalProperties:
+            type: array
+            items:
+              $ref: "#/components/schemas/NameTriple"
+    SummonersMapping:
+      type: object
+      additionalProperties: true
+      properties:
+        type: { const: "summoners" }
+        data:
+          type: array
+          items:
+            $ref: "#/components/schemas/NameTriple"
+    NameTriple:
+      type: object
+      required: [en]
+      properties:
+        en: { type: string, description: "English key" }
+        tw: { type: [string, "null"], description: "Traditional Chinese (TW)" }
+        cn: { type: [string, "null"], description: "Simplified Chinese (CN)" }
+        note: { type: [string, "null"] }
