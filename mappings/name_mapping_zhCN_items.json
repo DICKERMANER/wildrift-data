@@ -1,5 +1,25 @@
 {
-  "schema_version": "1.0.0",
   "type": "items",
-  "data": []
+  "updated_at": "2025-08-29",
+  "notes": "Full：補齊 Core 未收的裝備；採 EN/TW/CN 三向對照（Wild Rift 手遊譯名優先）。",
+  "data": [
+    { "en": "Berserker's Greaves",       "tw": "狂戰士護脛",       "cn": "狂战士胫甲" },
+    { "en": "Gluttonous Greaves",        "tw": "貪婪之靴",         "cn": "贪婪之靴" },
+    { "en": "Mercury's Treads",          "tw": "水銀之靴",         "cn": "水银之靴" },
+    { "en": "Plated Steelcaps",          "tw": "鋼鐵護脛",         "cn": "铁板靴" },
+
+    { "en": "Stasis Enchant",            "tw": "中娑附魔",         "cn": "中娅附魔" },
+    { "en": "Quicksilver Enchant",       "tw": "水銀附魔",         "cn": "水银附魔" },
+    { "en": "Protobelt Enchant",         "tw": "火箭腰帶附魔",     "cn": "原型腰带附魔" },
+    { "en": "Gargoyle Enchant",          "tw": "石像鬼附魔",       "cn": "石像鬼附魔" },
+    { "en": "Teleport Enchant",          "tw": "傳送附魔",         "cn": "传送附魔" },
+    { "en": "Locket Enchant",            "tw": "洛坦附魔",         "cn": "救赎之誓附魔" },
+
+    { "en": "Imperial Mandate",          "tw": "帝王命令",         "cn": "帝国指令" },
+    { "en": "Shurelya's Battlesong",     "tw": "舒瑞亞的戰歌",     "cn": "舒瑞娅的战歌" },
+    { "en": "Chemtech Putrifier",        "tw": "化學科技墮落藥劑", "cn": "化学科技腐蚀器" },
+
+    { "en": "Guardian Angel",            "tw": "守護天使",         "cn": "守护天使" },
+    { "en": "Edge of Night",             "tw": "夜色鋒刃",         "cn": "夜之锋刃" }
+  ]
 }
